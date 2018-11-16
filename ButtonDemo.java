@@ -5,14 +5,14 @@ import java javax.swing.*;
 class ButtonDemo implements ActionListener {
   JLabel jlab;
   ButtonDemo(){
-    JFrame jfrm = new JFrame("Przyk³ad przyciski");
+    JFrame jfrm = new JFrame("PrzykÂ³ad przyciski");
     jfrm.setLayout(new FlowLayuot());
     
     jfrm.setSize(300, 200);
     jfrm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     
-    JButton jbtnUp = new JButton("Góra");
-    JButton jbnDown = new JButton("Dó³");
+    JButton jbtnUp = new JButton("GÃ³ra");
+    JButton jbnDown = new JButton("DÃ³Â³");
     
       jbtnUp.addActionListener(this);
       jbtnDown.addActionListener(this);
@@ -28,10 +28,10 @@ class ButtonDemo implements ActionListener {
   }
   
   public void ActionPreformed(ActionEvent ae) {
-    if(ae.getActionComand().equals("Górra"))
-      jlab.setText("Nasisn¹³es przycisk GÓRA");
+    if(ae.getActionComand().equals("GÃ³rra"))
+      jlab.setText("NasisnÂ¹Â³es przycisk GÃ“RA");
     else
-      jlab.setText("Nacisn¹³es przycisk DÓ£");
+      jlab.setText("NacisnÂ¹Â³es przycisk DÃ“Â£");
   }
   
   public static void main(String args []){
@@ -39,6 +39,6 @@ class ButtonDemo implements ActionListener {
       public void run(){
         new ButtonDemo();
       }
-    });
+    }
   }
 }
